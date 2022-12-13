@@ -21,19 +21,19 @@
             <div class="navigation">
                 <ul class="navegacion">
                     <li class="apartados">
-                        <a class="link" href="">Sobre mi</a>
+                        <a class="link" href="#sobreMi">Sobre mi</a>
                     </li>
                     <li class="apartados">
-                        <a class="link" href="">Skills</a>
+                        <a class="link" href="#skills">Skills</a>
                     </li>
                     <li class="apartados">
-                        <a class="link" href="">Hobbies</a>
+                        <a class="link" href="#hobbies">Hobbies</a>
                     </li>
                     <li class="apartados">
-                        <a class="link" href="">Proyectos</a>
+                        <a class="link" href="#proyectos">Proyectos</a>
                     </li>
                     <li class="apartados">
-                        <a class="link" href="">eitan03@hotmail.com.ar</a>
+                        <a class="link" href="mailto:eitan03@hotmail.com.ar">Contacto</a>
                     </li>
                 </ul>
             </div>
@@ -44,7 +44,7 @@
                     Hola, mi nombre es Eitan Yberbuden, estudiante de programacion y desarrollo web
                 </h2>
                 <p class="parrafo">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas doloremque dolor sunt tempore? Voluptatibus mollitia, eos reiciendis similique molestiae neque veniam aspernatur perspiciatis autem ducimus repudiandae! Dignissimos officiis sunt cumque?
+                    Actualmente cursando la carrera Tecnicatura en programacion en la Universidad Nacional de Lomas de Zamora (UNLZ) y realizando el curso de Desarrolo Web Full stack en el programa Oracle next education realizado por Alura Latam y Oracle 
                 </p>
                 <ul class="navegacion">
                     <li class="apartados">
@@ -77,17 +77,20 @@
                     </li>
                 </ul>
             </div>
-            <div class="imagenSobre"></div>
+            <div class="imagenSobre"><img src="./assets/yo.jpeg" alt="" class="imagenSobre"></div>
         </section>
     </header>
-        <section class="sobreMi">
+        <section class="sobreMi" id="sobreMi">
             <h2 class="tituloSobre">Sobre mi</h2>
-            <p class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae eligendi illum iste numquam impedit quis perspiciatis, unde esse maxime ipsum tempora eaque tempore distinctio placeat est beatae dicta! In, eius.
+            <p class="parrafo">
+            Soy Argentino, actualmente viviendo en San Vicente, Buenos Aires, siempre fui un apasionado de la tecnologia y en el ultimo año decidi comenzar a estudiar programacion por mi cuenta, empece con HTML y CSS, me comence a meter en todo lo que es este mundo de la programacion, decidi anotarme en una tecnicatura en programacion, y ademas Oracle y Alura Latam me dieron la oportunidad de comenzar a estudiar desarrollo web en este hermoso y genial programa Oracle one.
             <br><br>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae placeat quo magnam molestiae cum enim, modi doloremque! Corrupti odio ad nostrum labore adipisci non excepturi dolor, facilis accusamus quasi voluptate?
+            Me encuentro dia a dia capacitandome en el desarrollo web con el objetivo de en un futuro tener la posibilidad de encontrar mi primer trabajo en el mundo IT, soy muy apasionado del desarrollo front end, pero al mismo tiempo estoy estudiando toda la parte del back end tambien.
+            <br><br><br>
+            Si te intereso mi perfil puedes contactarme en el formulario que encontraras al final de la pagina, tambien en la parte inicial encontraras mi email.  
             </p>
         </section>
-        <section class="skills">
+        <section class="skills" id="skills">
                 <h2 class="tituloS">Skills</h2>
             <div class="skillsContenedor">
                 <div class="contenedorFirst">
@@ -112,7 +115,7 @@
                 </div>
             </div>
         </section>
-        <section class="hobbies">
+        <section class="hobbies" id="hobbies">
             <div>
                 <h2 class="tituloS">Hobbies</h2>
             </div>
@@ -152,7 +155,10 @@
             </div>
         </section>
         <section class="educacion">
+        <div>
             <h2 class="tituloS">Formación académica</h2>
+        </div>
+        <div class="carreraContainer">
             <div class="carrera">
                 <div class="tecImagen">
                     <img src="./assets/unlz.png" alt="">
@@ -165,16 +171,18 @@
                 <h2 class="carreraTitulo">Formacion en desarrollo web full stack</h2>
                 <p>En curso - Oracle One y Alura LATAM</p>
             </div>
-        </section>
-        <section class="proyectos">
+        </div> 
+        </section> 
+        <section class="proyectos" id="proyectos">
+            <h2 class="tituloS">Proyectos</h2>
             <div class="proyectosDiv">
                 <img src="./assets/encriptador.png" alt="" class="imgProyectos">
                 <div class="proyectoInfo">
                     <h2 class="proyectoNombre">Encriptador de texto</h2>
                     <p class="proyectoDescripcion">Challenge de oracle encriptador</p>
                     <div>
-                        <button class="botonRepositorio">Repositorio</button>
-                        <button class="botonPagina">Ver Pagina f8ce</button>
+                        <button class="botonRepositorio" onclick="location.href='https://github.com/eitan230/eitan230.github.io'">Repositorio</button>
+                        <button class="botonPagina" onclick="location.href='https://eitan230.github.io/encriptador'">Ver Pagina</button>
                     </div>
                 </div>   
             </div>
@@ -183,22 +191,22 @@
                     <h2 class="proyectoNombre">Portfolio</h2>
                     <p class="proyectoDescripcion">Challenge de oracle portfolio propio</p>
                     <div>
-                        <button class="botonRepositorio">Repositorio</button>
-                        <button class="botonPagina">Ver Pagina</button>
+                        <button class="botonRepositorio" onclick="location.href='https://github.com/eitan230/eitanyberbuden'">Repositorio</button>
+                        <button class="botonPagina" onclick="location.href='https://eitan230.github.io/eitanyberbuden/'">Ver Pagina</button>
                     </div>
                 </div>
                 <img src="./assets/portfolio.png" alt="" class="imgProyectos">   
             </div>
         </section>
         <section class="contacto">
-            <div>
+            <div class="contactoConteiner">
             <h2 class="contactoTitulo">Contacto</h2>
             <p class="contactoDescripcion">¿Quieres contactarme?<br>
                 Complete el siguiente formulario y me pondré en contacto con usted lo antes posible.</p>
             <form action="#">
                     <fieldset>
                         <div class="inputContainer">
-                            <input type="text" name="name" class="input" placeholder="Nombre">
+                            <input type="email" name="name" class="input" placeholder="Nombre">
                             <label class="inputLabel" for="name">Nombre</label>
                             <span class="inputMessageError">Este campo no es valido</span>
                         </div>
@@ -217,14 +225,20 @@
                             <label class="inputLabel" for="mensaje">Mensaje</label>
                             <span class="inputMessageError">Este campo no es valido</span>
                         </div>
-                    </fieldset>  
-                </div>                    
+                        <div>
+                            <button type="submit" class="buttonSubmit" placeholder="Enviar Mensaje">Enviar mensaje</button>
+                        </div>
+                    </fieldset>                   
             </form>
-
+            </div>
+            <div class="mensajeEnviado">
+                <span class="mensajeIcono"></span>
+                <h1 class="mensajeTexto">¡Mensaje enviado!</h1>
+            </div>
         </section>
         <footer class="footer">
             <h3 class="footerText">Sitio web desarrollado por Eitan Yberbuden<br>2022</h3>
         </footer>
-    
+        <script src="script.js"></script>
 </body>
 </html>

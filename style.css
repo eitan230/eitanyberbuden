@@ -32,6 +32,7 @@
 .apartados{
     padding-right: 1.5rem;
     list-style: none;
+    transition: 150ms;
 }
 
 .link{
@@ -56,8 +57,8 @@
 
 }
 .nombrePresentacion{
-    font-size: 2.5rem;
-    padding: 2rem 0rem;
+    font-size: 2rem;
+    padding: 1rem 0rem;
     font-style: bold;
     font-weight: 600;
 }
@@ -78,7 +79,7 @@
     font-weight: 600;
 }
 
-.imagenSobre{
+/*.imagenSobre{
     display: flex;
     background:url(assets/yo.jpeg);
     background-size: cover;
@@ -88,6 +89,12 @@
     width: 368px;
     height: 368px;
     align-self: flex-end;
+}*/
+.imagenSobre{
+    border-radius: 100%;
+    width: 368px;
+    height: 368px;
+    float: right;
 }
 
 .material-symbols-outlined {
@@ -127,6 +134,7 @@
 
 .contenedorFirst{
     background: #FFFFFF;
+    border-radius: 2%;
     width: calc(19% + 1%);
     height: 9rem;
     margin: 1%;
@@ -177,10 +185,16 @@
 
 .educacion{
     display: flex;
+    flex-direction: column;
     padding: 1rem 0;
     justify-content: center;
     background: #c9dcf8;
     font-family: 'Montserrat', sans-serif;
+}
+
+.carreraContainer{
+    display: flex;
+    justify-content: center;
 }
 
 .carrera{
@@ -357,6 +371,28 @@ input:focus{
     display: none;
 }
 
+.buttonSubmit{
+    padding: .5rem 1rem;
+    border-style: solid;
+    border-color: #2A7AE4;
+    color: #FFFFFF;
+    background: #2A7AE4;
+    transition: .5s;
+}
+
+.buttonSubmit:hover{
+    border-color: #2260b1;
+    color: #FFFFFF;
+    background: #2260b1;
+}
+
+.buttonSubmit:active{
+    transition: none;
+    border-color: #1c4f92;
+    color: #FFFFFF;
+    background: #1c4f92;
+}
+
 .footer{
     background: #F5F5F5;
 }
@@ -367,6 +403,30 @@ input:focus{
     font-family: 'Montserrat', sans-serif;
     line-height: 1.5rem;
 }
+
+.mensajeEnviado{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.mensajeIcono {
+    margin-top: 3rem;
+    display: block;
+    width: 3.5rem;
+    height: 3.5rem;
+    margin-bottom: 1rem;
+    background-image: url(assets/checkmark.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+.mensajeTexto {
+    font-weight: bold;
+    font-size: 2rem;
+    max-width: 20rem;
+    margin-bottom: 3rem;
+  }
 
 @media screen and (max-width:1023px){
     .navbar .apartados:nth-child(1), .navbar .apartados:nth-child(2), .navbar .apartados:nth-child(3), .navbar .apartados:nth-child(4){
@@ -383,6 +443,7 @@ input:focus{
         font-size: 1rem;
     }
     .imagenSobre{
+        align-self: center;
         width: 168px;
         height: 168px;
     }
@@ -470,7 +531,7 @@ input:focus{
         font-size: 1.2rem;
         padding: 2rem .5rem;
     }
-    .educacion{
+    .carreraContainer{
         flex-direction: column;
         align-items: center;
     }
@@ -510,7 +571,7 @@ input:focus{
     }
 }
 
-@media screen and (max-width:414px){
+@media screen and (max-width:490px){
     .navbar{
         flex-wrap: wrap;
     }
@@ -524,6 +585,7 @@ input:focus{
         width: auto;
     }
     .imagenSobre{
+        display: flex;
         align-self: flex-start;
         width: 98px;
         height: 98px;
