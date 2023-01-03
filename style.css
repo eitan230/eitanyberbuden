@@ -29,6 +29,38 @@
     align-items: center;
 }
 
+.oscuro input:checked ~ span::after{
+    background: green;
+    transform: translate(20px) scale(.9);
+}
+
+.oscuro span{
+    display: inline-block;
+    width: 50px;
+    height: 30px;
+    border-radius: 30px;
+    background: #5c5c5c;
+}
+
+.oscuro input{
+    display: none;
+}
+
+.oscuro{
+    display: flex;
+    align-items: center;
+}
+
+.oscuro span::after{
+    display: block;
+    content: '';
+    background: red;
+    border-radius: 30px;
+    transform: scale(.9);
+    transition: .5s;
+    width: 30px;
+    height: 30px;
+}
 
 .logoNombre{
     display: flex;
@@ -627,6 +659,21 @@ input:focus{
         padding: 2rem .5rem;
         font-family: 'Montserrat', sans-serif;
     }
+
+    .oscuro span{
+        display: inline-block;
+        width: 35px;
+        height: 20px;
+        border-radius: 30px;
+        background: #5c5c5c;
+    }
+
+    
+    .oscuro span::after{
+        width: 20px;
+        height: 20px;
+    }
+    
 }
 
 @media screen and (max-width:490px){
