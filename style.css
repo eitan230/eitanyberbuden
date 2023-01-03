@@ -11,6 +11,19 @@
     align-items: center;
 }
 
+.navigation{
+    display: flex;
+    align-items: center;
+}
+
+html.darkMode{
+    filter: invert(100%);
+}
+
+html.darkMode img, html.darkMode .mensajeIcono{
+    filter: invert(100%);
+}
+
 .logoNombre{
     display: flex;
     align-items: center;
@@ -392,6 +405,19 @@ input:focus{
     background: #1c4f92;
 }
 
+.mailContacto{
+    display: none;
+    align-items: center;
+}
+
+.mailTexto{
+    padding: 2rem 0 .5rem 0;
+}
+
+.linkMail{
+    text-decoration: none;
+}
+
 .footer{
     background: #F5F5F5;
 }
@@ -502,11 +528,18 @@ input:focus{
         font-size: 1rem;
         padding: .5rem 0rem;
     }
+    .logo{
+        width: 1rem;
+        padding-right: .5rem;
+    }
     .parrafo{
         font-size: .7rem;
     }
     .apartados{
         padding-right: .5rem ;
+    }
+    .apartados:nth-child(5){
+        display: none;
     }
     .link{
         font-size: .6rem;
@@ -575,7 +608,7 @@ input:focus{
         flex-wrap: wrap;
     }
     .logo{
-        width: 1.5rem;
+        width: 1rem;
     }
     .presentacion{
         flex-direction: column-reverse;
@@ -632,6 +665,10 @@ input:focus{
     }
     .contactoDescripcion{
         font-size: 1rem;
+    }
+
+    .mailContacto{
+        display: block;
     }
     .footerText{
         padding: 2rem 1rem;
