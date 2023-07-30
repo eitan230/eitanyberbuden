@@ -30,7 +30,7 @@
 }
 
 .oscuro input:checked ~ span::after{
-    background: green;
+    background: white;
     transform: translate(20px) scale(.9);
 }
 
@@ -54,7 +54,7 @@
 .oscuro span::after{
     display: block;
     content: '';
-    background: red;
+    background: white;
     border-radius: 30px;
     transform: scale(.9);
     transition: .5s;
@@ -516,7 +516,7 @@ input:focus{
         display: none;
     }
     .tituloPrincipal{
-        font-size: 1rem;
+        font-size: 2rem;
     }
     .nombrePresentacion{
         font-size: 1.3rem;
@@ -576,6 +576,9 @@ input:focus{
 }
 
 @media screen and (max-width:768px){
+    .tituloPrincipal{
+        font-size: 1rem;
+    }
     .navbar{
         padding: 1rem 1rem;
     }
@@ -668,10 +671,18 @@ input:focus{
         background: #5c5c5c;
     }
 
-    
     .oscuro span::after{
         width: 20px;
         height: 20px;
+    }
+
+
+    
+    .oscuro input:checked ~ span::after{
+        width: 20px;
+        height: 20px;
+        background: white;
+        transform: translate(15px) scale(.9);
     }
     
 }
