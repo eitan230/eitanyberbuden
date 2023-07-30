@@ -29,6 +29,39 @@
     align-items: center;
 }
 
+.oscuro input:checked ~ span::after{
+    background: white;
+    transform: translate(20px) scale(.9);
+}
+
+.oscuro span{
+    display: inline-block;
+    width: 50px;
+    height: 30px;
+    border-radius: 30px;
+    background: #5c5c5c;
+}
+
+.oscuro input{
+    display: none;
+}
+
+.oscuro{
+    display: flex;
+    align-items: center;
+}
+
+.oscuro span::after{
+    display: block;
+    content: '';
+    background: white;
+    border-radius: 30px;
+    transform: scale(.9);
+    transition: .5s;
+    width: 30px;
+    height: 30px;
+}
+
 
 .logoNombre{
     display: flex;
@@ -482,9 +515,7 @@ input:focus{
     .navbar .apartados:nth-child(1), .navbar .apartados:nth-child(2), .navbar .apartados:nth-child(3), .navbar .apartados:nth-child(4){
         display: none;
     }
-    .tituloPrincipal{
-        font-size: 1rem;
-    }
+
     .nombrePresentacion{
         font-size: 1.3rem;
     }
@@ -543,6 +574,9 @@ input:focus{
 }
 
 @media screen and (max-width:768px){
+    .tituloPrincipal{
+        font-size: 1rem;
+    }
     .navbar{
         padding: 1rem 1rem;
     }
@@ -625,6 +659,28 @@ input:focus{
         background: #F5F5F5;
         padding: 2rem .5rem;
         font-family: 'Montserrat', sans-serif;
+    }
+
+    .oscuro span{
+        display: inline-block;
+        width: 35px;
+        height: 20px;
+        border-radius: 30px;
+        background: #5c5c5c;
+    }
+
+    .oscuro span::after{
+        width: 20px;
+        height: 20px;
+    }
+
+
+    
+    .oscuro input:checked ~ span::after{
+        width: 20px;
+        height: 20px;
+        background: white;
+        transform: translate(15px) scale(.9);
     }
 }
 
