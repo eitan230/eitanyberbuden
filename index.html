@@ -113,8 +113,20 @@
                     <p class="nombreSkills">Java</p>
                 </div>
                 <div class="contenedorFirst">
-                    <span><img src="./assets/iconos/nodejs.png" alt="" class="icono"></span>
-                    <p class="nombreSkills">NodeJS</p>
+                    <span><img src="./assets/iconos/react.svg" alt="" class="icono"></span>
+                    <p class="nombreSkills">ReactJS</p>
+                </div>
+                <div class="contenedorFirst">
+                    <span><img src="./assets/iconos/git.png" alt="" class="icono"></span>
+                    <p class="nombreSkills">Git</p>
+                </div>
+                <div class="contenedorFirst">
+                    <span><img src="./assets/iconos/github.png" alt="" class="icono"></span>
+                    <p class="nombreSkills">Github</p>
+                </div>
+                <div class="contenedorFirst">
+                    <span><img src="./assets/iconos/tailwind.svg" alt="" class="icono"></span>
+                    <p class="nombreSkills">TailwindCSS</p>
                 </div>
             </div>
         </section>
@@ -174,7 +186,7 @@
             <div class="carrera">
                 <div class="tecImagen"><img src="./assets/Oracle-logo.png" alt="" class="oracleLogo"></div>
                 <h2 class="carreraTitulo">Formacion en desarrollo web full stack</h2>
-                <p>En curso - Oracle One y Alura LATAM</p>
+                <p>Finalizado - Oracle One y Alura LATAM</p>
             </div>
         </div> 
         </section> 
@@ -186,8 +198,8 @@
                     <h2 class="proyectoNombre">Encriptador de texto</h2>
                     <p class="proyectoDescripcion">Challenge de oracle encriptador</p>
                     <div>
-                        <button class="botonRepositorio" onclick="location.href='https://github.com/eitan230/eitan230.github.io'">Repositorio</button>
-                        <button class="botonPagina" onclick="location.href='https://eitan230.github.io/encriptador'">Ver Pagina</button>
+                        <button class="botonRepositorio" onclick="window.open('https://github.com/eitan230/eitan230.github.io', '_blank')">Repositorio</button>
+                        <button class="botonPagina" onclick="window.open('https://eitan230.github.io/encriptador', '_blank')">Ver Pagina</button>
                     </div>
                 </div>   
             </div>
@@ -196,25 +208,60 @@
                     <h2 class="proyectoNombre">Portfolio</h2>
                     <p class="proyectoDescripcion">Challenge de oracle portfolio propio</p>
                     <div>
-                        <button class="botonRepositorio" onclick="location.href='https://github.com/eitan230/eitanyberbuden'">Repositorio</button>
-                        <button class="botonPagina" onclick="location.href='https://eitan230.github.io/eitanyberbuden/'">Ver Pagina</button>
+                        <button class="botonRepositorio" onclick="window.open('https://github.com/eitan230/eitanyberbuden', '_blank')">Repositorio</button>
+                        <button class="botonPagina" onclick="window.open('https://eitan230.github.io/eitanyberbuden/', '_blank')">Ver Pagina</button>
                     </div>
                 </div>
                 <img src="./assets/portfolio.png" alt="" class="imgProyectos">   
             </div>
+            <div class="proyectosDiv">
+                <img src="./assets/tudestinoapp.png" alt="tu destino app" class="imgProyectos">   
+                <div class="proyectoInfo">
+                    <h2 class="proyectoNombre">Tu Destino App</h2>
+                    <p class="proyectoDescripcion">Web app desarrollada en equipo de trabajo con React JS</p>
+                    <div>
+                        <button class="botonRepositorio" onclick="window.open('https://github.com/No-Country/c9-54-t-mern/tree/main/client', '_blank')">Repositorio</button>
+                        <button class="botonPagina" onclick="window.open('https://tu-destino-app-client.vercel.app/', '_blank')">Ver Pagina</button>
+                    </div>
+                </div>
+            </div>
+            <div class="proyectosDiv">
+                <div class="proyectoInfo">
+                    <h2 class="proyectoNombre">MoveAR</h2>
+                    <p class="proyectoDescripcion">Web app desarrollada en equipo de trabajo con React JS.
+                        <br><br>Pagina de alquiler de camiones de distintos tamaños para realizar mudanzas</p>
+                    <div>
+                        <button class="botonRepositorio" onclick="window.open('https://github.com/No-Country/s7-12-m-javareact', '_blank')">Repositorio</button>
+                        <button class="botonPagina" onclick="window.open('https://s7-12-m-javareact.vercel.app/', '_blank')">Ver Pagina</button>
+                    </div>
+                </div>
+                <img src="./assets/movear.png" alt="MoveAR" class="imgProyectos">   
+            </div>
+            <div class="proyectosDiv">
+                <img src="./assets/bookchange.png" alt="Book Change" class="imgProyectos">   
+                <div class="proyectoInfo">
+                    <h2 class="proyectoNombre">Book Change</h2>
+                    <p class="proyectoDescripcion">Aplicacion desarrollada en equipo de trabajo con React Native.
+                        <br><br>Desarrollada para la venta o intercambio de libros, disponible para su descarga en la propia pagina</p>
+                    <div>
+                        <button class="botonRepositorio" onclick="window.open('https://github.com/No-Country/S8-16-m-reactnative', '_blank')">Repositorio</button>
+                        <button class="botonPagina" onclick="window.open('https://matiasmass.github.io/book-change/', '_blank')">Ver Pagina</button>
+                    </div>
+                </div>
+            </div>
         </section>
         <section class="contacto">
             <div class="contactoConteiner">
-            <h2 class="contactoTitulo">Contacto</h2>
-            <p class="contactoDescripcion">¿Quieres contactarme?<br>
-                Complete el siguiente formulario y me pondré en contacto con usted lo antes posible.</p>
-            <form action="#">
-                    <fieldset>
-                        <div class="inputContainer">
-                            <input type="email" name="name" class="input" placeholder="Nombre">
-                            <label class="inputLabel" for="name">Nombre</label>
-                            <span class="inputMessageError">Este campo no es valido</span>
-                        </div>
+                <h2 class="contactoTitulo">Contacto</h2>
+                <p class="contactoDescripcion">¿Quieres contactarme?<br>
+                    Complete el siguiente formulario y me pondré en contacto con usted lo antes posible.</p>
+                    <form action="#">
+                        <fieldset>
+                            <div class="inputContainer">
+                                <input type="email" name="name" class="input" placeholder="Nombre">
+                                <label class="inputLabel" for="name">Nombre</label>
+                                <span class="inputMessageError">Este campo no es valido</span>
+                            </div>
                         <div class="inputContainer">
                             <input type="text" name="email" class="input" placeholder="Email">
                             <label class="inputLabel" for="email">Email</label>
@@ -235,10 +282,10 @@
                         </div>
                     </fieldset>                   
             </form>
+            </div>
             <div class="mailContacto">
                 <p class="mailTexto">Tambien puedes enviarme un mail si asi lo deseas:</p>
                 <button class="botonPagina" onclick="location.href='mailto:eitan03@hotmail.com.ar'">eitan03@hotmail.com.ar</button>
-            </div>
             </div>
             <div class="mensajeEnviado">
                 <span class="mensajeIcono"></span>
@@ -246,7 +293,7 @@
             </div>
         </section>
         <footer class="footer">
-            <h3 class="footerText">Sitio web desarrollado por Eitan Yberbuden<br>2022</h3>
+            <h3 class="footerText">Sitio web desarrollado por Eitan Yberbuden<br>2023</h3>
         </footer>
         <script src="script.js"></script>
 </body>
